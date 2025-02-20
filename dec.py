@@ -3,7 +3,7 @@ import os
 def decode_lua_data(encrypted_data):
     # header check
     if encrypted_data[:4] != b'abcd':
-        raise ValueError("En-tête invalide")
+        raise ValueError("Header is incorrect !")
 
     # Table 
     hex_table = b'0123456789abcdef'
